@@ -75,6 +75,17 @@ public class ObradaSmjer extends Obrada<Smjer> implements ObradaInterface<Smjer>
         }
     }
     
+    private void kontrolaTrajanje (Smjer s) throws EdunovaException{
+        
+    if(s.getTrajanje() == null){
+        
+    throw new EdunovaException("Trajanje mora biti uneseno");
+    }
+    
+}
+    
+    
+    
     public boolean delete(Smjer s){
         
         System.out.println("Brišem u bazi");
